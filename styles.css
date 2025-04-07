@@ -1,27 +1,92 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: inherit;
 }
 
-body{
+body {
     --bgc-color: hsl(47, 88%, 63%);
     --card-bgc-color: #fff;
     --p-color: hsl(0, 0%, 42%);
     --t-color: hsl(0, 0%, 7%);
 }
 
-body{
+body {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     height: 100dvh;
+    font-family: sans-serif;
+    background-color: var(--bgc-color);
 }
 
-.card__text{
+button{
+    margin: 0;
+    padding: 0;
+}
+
+.card__text {
     font-weight: 500;
+    color: var(--p-color);
+}
+
+.card__title,
+.card__profile__name,
+.card__button {
+    font-weight: 800;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
 }
 
 
 
+/* COLOCANDO ESTILOS PREDETERMINADOS */
 
+/* INICIANDO STYLES GENERAL */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: var(--card-bgc-color);
+    width: clamp(300px, 50%, 360px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    margin: auto;
+    padding: 14px;
+    border: 1px solid #000;
+    box-shadow: 8px 8px 0 #000;
+}
+
+.card__img-container {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.card__img-container img {
+    width: 100%;
+}
+
+.card__profile-container{
+    display: flex;
+}
