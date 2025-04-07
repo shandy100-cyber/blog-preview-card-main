@@ -81,7 +81,7 @@ p {
     align-items: center;
     border-radius: 16px;
     margin: auto;
-    padding: 14px;
+    padding: 14px 16px;
     border: 1px solid #000;
     box-shadow: 8px 8px 0 #000;
 }
